@@ -57,3 +57,55 @@ A modern, responsive portfolio website built with React and CSS to showcase my p
 4. Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
 
 ## 📂 Project Structure
+/src
+  /assets        - Images and static resources
+  /components    - React components
+    /About      - About section component
+    /Footer     - Footer component
+    /Hero       - Hero section component
+    /Navbar     - Navigation bar component
+    /Projects   - Projects section component
+    /Skills     - Skills section component
+  App.jsx        - Main application component
+  App.css        - Global styles
+  index.css      - CSS reset and base styles
+  main.jsx       - Entry point
+
+## 🎨 Customization
+
+- **Colors**: Edit the CSS variables in `/src/App.css` to change the color scheme
+- **Content**: Update project data, skills, and personal information in each component
+- **Images**: Replace images in the `/src/assets` directory
+- **Font**: Change the font by updating the font-family in the CSS files
+
+## 🚢 Deployment
+
+This project is set up to be easily deployed on platforms like Vercel or Netlify.
+
+### Deploying to Vercel
+
+```bash
+npm install -g vercel
+vercel
+```
+
+### Deploying to Netlify
+
+```bash
+npm install -g netlify-cli
+netlify deploy
+```
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 📬 Contact
+
+Viraj Gavade - [vrajgavade17@gmail.com](mailto:vrajgavade17@gmail.com)
+
+Project Link: [https://github.com/viraj-gavade/portfolio](https://github.com/viraj-gavade/portfolio)
+
+---
+
+Made with ❤️ by Viraj Gavade
