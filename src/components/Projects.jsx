@@ -12,7 +12,7 @@ const Projects = () => {
       title: "VideoTube-Backend",
       description: "Scalable video platform backend built with modern best practices",
       githubLink: "https://github.com/viraj-gavade/VideoTube-Backend",
-      demoLink: null,
+      demoLink: 'https://videotubeapi-uukxbf8d.b4a.run./home',
       features: [
         "🔐 Secure user authentication with JWT and password hashing",
         "🎥 Video upload and storage integration with Cloudinary",
@@ -29,7 +29,7 @@ const Projects = () => {
       title: "Thriftify",
       description: "A modern, scalable e-commerce platform for buying and selling secondhand goods.",
       githubLink: "https://github.com/viraj-gavade/Thriftify",
-      demoLink: null,
+      demoLink: 'https://thriftify.onrender.com',
       features: [
         "🔐 Secure user authentication with JWT and password hashing",
         "🛒 Order management system with tracking of customer orders and status",
@@ -42,63 +42,48 @@ const Projects = () => {
       ],
       tags: ["EJS", "Node.js", "Express", "MongoDB", "Cloudinary"]
     },
-    {
-      id: 3,
-      title: "Password Generator",
-      description: "A simple, secure password generator with customizable parameters for generating strong passwords.",
-      githubLink: "https://github.com/viraj-gavade/Password-Generator",
-      demoLink: null,
-      features: [
-        "🔒 Generates secure, random passwords with customizable length and character types",
-        "🎛️ User interface for selecting password complexity (uppercase, lowercase, numbers, symbols)",
-        "⚡ Fast password generation with optimized algorithms",
-        "💻 Built with modern JavaScript (ES6+) for a smooth user experience",
-        "📜 Password history and copy-to-clipboard functionality for ease of use"
-      ],
-      tags: ["JavaScript", "HTML", "CSS", 'React']
-    },
+   
     {
       id: 4,
-      title: "E-Commerce API",
-      description: "A robust RESTful API for managing e-commerce operations, including products, orders, and users.",
-      githubLink: "https://github.com/viraj-gavade/e-commerce-api",
-      demoLink: null,
+      title: "Blogify - Full Stack Blogging Platform",
+      description: "A modern full-stack blogging platform built with React and Node.js, featuring Google OAuth authentication and a clean, responsive UI",
+      githubLink: "https://github.com/viraj-gavade/Blogging-Website",
+      demoLink: 'https://blogging-website-exjz.onrender.com/',
       features: [
-        "🔐 Secure authentication with JWT and password hashing for user login and registration",
-        "📊 Optimized database queries for fast product search and order retrieval",
-        "🛡️ Role-based access control (RBAC) for admin and customer management",
-        "🧑‍💻 Clean, maintainable code following best practices with Express.js and MongoDB"
-      ],
-      tags: ["Node.js", "Express", "MongoDB", "JWT"]
+  "🎨 Modern, responsive UI built with Tailwind CSS for a clean user experience",
+  "⚡ Real-time feedback using toast notifications for instant user interaction",
+  "💫 Smooth animations and transitions for a polished feel",
+  "🌙 Dark mode support for better accessibility and user preference",
+  "🔐 Google OAuth2 and email/password authentication for flexible sign-in options",
+  "🛡️ Secure user sessions powered by JWT for reliable auth flow",
+  "📝 Create rich blog posts with support for image uploads and markdown",
+  "🖼️ Image preview feature before publishing blog content",
+  "💬 Real-time comment system to boost community interaction",
+  "👁️ Show/hide password toggle for better password security and UX"
+]
+,
+      tags: ["Node.js",'React.js', "Express", "MongoDB", "JWT",'Oath2',]
     },
     {
       id: 5,
-      title: "URL-Shortener",
-      description: "Efficient URL shortening service",
-      githubLink: "https://github.com/viraj-gavade/Url-Shortner",
-      demoLink: null,
+      title: "Password Generator",
+      description: "A simple, secure password generator with customizable parameters for generating strong passwords.",
+      githubLink: "https://github.com/viraj-gavade/BookStore-Api",
+      demoLink: 'https://password-generator-lime-tau-95.vercel.app',
       features: [
-        "⚡ Fast redirection system",
-        "🔒 Secure custom URL generation",
-        "🎯 API rate limiting"
+      "🔑 Generate strong, random passwords with customizable length and complexity",
+        "🔒 Secure password storage using local storage",
+        "🌐 Responsive design for mobile and desktop compatibility",
+        "🎨 User-friendly interface with clear instructions and feedback",
+        "💡 Copy-to-clipboard functionality for easy password sharing",
+        "🔄 Regenerate passwords with a single click",
+        "🛠️ Customizable settings for password length and character types",
+        "📜 Password history feature to keep track of generated passwords"
       ],
-      tags: ["Node.js", "Express", "MongoDB"]
+      tags: ["React.js", "JavaScript",'Tailwind CSS','Vite.js']
+
     },
-    {
-      id: 6,
-      title: "Task Manager-TS",
-      description: "Modern task management application built with TypeScript and Express",
-      githubLink: "https://github.com/viraj-gavade/Task-Manager-TS",
-      demoLink: null,
-      features: [
-        "🔐 JWT authentication and authorization",
-        "📝 CRUD operations for tasks and users",
-        "🎯 TypeScript for enhanced type safety and developer experience",
-        "📊 MongoDB integration with Mongoose ODM",
-        "✨ Clean architecture with middleware implementation"
-      ],
-      tags: ["TypeScript", "Express", "MongoDB", "JWT"]
-    }
+   
   ];
 
   const toggleProject = (id) => {

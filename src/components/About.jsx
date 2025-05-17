@@ -97,7 +97,7 @@ const About = () => {
             variants={fadeIn}
           >
             <p className="about-intro">
-              I'm a passionate <span className="highlight">MERN Stack Developer</span> with a strong grip on building 
+              I'm a passionate <span className="highlight">Full Stack Developer</span> with a strong grip on building 
               full-stack web apps that scale. I'm also diving deep into <span className="highlight">Machine Learning</span>
               —curious about how data can drive real-world solutions. I love building things that actually solve problems.
             </p>
