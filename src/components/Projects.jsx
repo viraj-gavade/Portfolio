@@ -62,28 +62,8 @@ const Projects = () => {
   "👁️ Show/hide password toggle for better password security and UX"
 ]
 ,
-      tags: ["Node.js",'React.js', "Express", "MongoDB", "JWT",'Oath2',]
+      tags: ["Node.js",'React.js', "Express", "MongoDB", "JWT",'OAuth2',]
     },
-    {
-      id: 5,
-      title: "Password Generator",
-      description: "A simple, secure password generator with customizable parameters for generating strong passwords.",
-      githubLink: "https://github.com/viraj-gavade/BookStore-Api",
-      demoLink: 'https://password-generator-lime-tau-95.vercel.app',
-      features: [
-      "🔑 Generate strong, random passwords with customizable length and complexity",
-        "🔒 Secure password storage using local storage",
-        "🌐 Responsive design for mobile and desktop compatibility",
-        "🎨 User-friendly interface with clear instructions and feedback",
-        "💡 Copy-to-clipboard functionality for easy password sharing",
-        "🔄 Regenerate passwords with a single click",
-        "🛠️ Customizable settings for password length and character types",
-        "📜 Password history feature to keep track of generated passwords"
-      ],
-      tags: ["React.js", "JavaScript",'Tailwind CSS','Vite.js']
-
-    },
-   
   ];
 
   const toggleProject = (id) => {
@@ -204,6 +184,31 @@ const Projects = () => {
               </div>
             </motion.div>
           ))}
+        </motion.div>
+        
+        {/* Explore More Projects Section */}
+        <motion.div
+          className="explore-projects-section"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
+          <div className="explore-container">
+            <h3 className="explore-title">Discover More Projects</h3>
+            <p className="explore-description">
+              These are just a few highlights from my portfolio. I've built many other projects including 
+              password generators, URL shorteners, task managers, and more!
+            </p>
+            <a 
+              href="https://github.com/viraj-gavade?tab=repositories" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="explore-button"
+            >
+              View All Projects on GitHub
+            </a>
+          </div>
         </motion.div>
       </div>
     </section>
