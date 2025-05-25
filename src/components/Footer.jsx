@@ -100,13 +100,7 @@ const Footer = () => {
         </div>
       </div>
       
-      <button 
-        className="scroll-top-btn" 
-        onClick={scrollToTop}
-        aria-label="Scroll to top"
-      >
-        <FiArrowUp />
-      </button>
+      
     </footer>
   );
 };

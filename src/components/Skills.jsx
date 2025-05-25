@@ -3,8 +3,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import './Skills.css';
 
-const Skills = () => {
-  const languages = [
+const Skills = () => {  const languages = [
     { name: 'Python', logo: 'python', color: '3776AB' },
     { name: 'C++', logo: 'cplusplus', color: '00599C' },
     { name: 'C', logo: 'c', color: 'A8B9CC' },
@@ -16,7 +15,7 @@ const Skills = () => {
     { name: 'React', logo: 'react', color: '61DAFB' },
     { name: 'Node.js', logo: 'nodejs', color: '339933' },
     { name: 'Express', logo: 'express', color: '000000' },
-    { name: 'NestJS', logo: 'nestjs', color: 'E0234E' },
+    { name: 'FastAPI', logo: 'fastapi', color: '009688' },
     { name: 'Flask', logo: 'flask', color: '000000' },
     { name: 'Tailwind CSS', logo: 'tailwindcss', color: '06B6D4' },
     { name: 'Bootstrap', logo: 'bootstrap', color: '563D7C' },
@@ -31,17 +30,24 @@ const Skills = () => {
     { name: 'PostgreSQL', logo: 'postgresql', color: '336791' },
     { name: 'SQLite', logo: 'sqlite', color: '003B57' },
   ];
-  
-  const tools = [
+    const ml_libraries = [
+    { name: 'Scikit-Learn', logo: 'scikitlearn', color: 'F7931E' },
+    { name: 'Pandas', logo: 'pandas', color: '150458' },
+    { name: 'NumPy', logo: 'numpy', color: '013243' },
+    { name: 'Matplotlib', logo: 'python', color: '3776AB' },
+    { name: 'Seaborn', logo: 'python', color: '4EABD1' },
+  ];  const tools = [
     { name: 'Docker', logo: 'docker', color: '2496ED' },
-    { name: 'Prisma', logo: 'prisma', color: '2D3748' },
-    { name: 'Postman', logo: 'postman', color: 'FF6C37' },
     { name: 'Git', logo: 'git', color: 'F05032' },
+    { name: 'Jupyter', logo: 'jupyter', color: 'F37626' },
     { name: 'Vercel', logo: 'vercel', color: '000000' },
     { name: 'Netlify', logo: 'netlify', color: '00C7B7' },
+    { name: 'Render', logo: 'render', color: '46E3B7' },
+    { name: 'Railway', logo: 'railway', color: '0B0D0E' },
     { name: 'Firebase', logo: 'firebase', color: 'FFCA28' },
     { name: 'Linux', logo: 'linux', color: 'FCC624' },
     { name: 'AWS', logo: 'amazonaws', color: '232F3E' },
+    { name: 'Postman', logo: 'postman', color: 'FF6C37' },
   ];
   
   // Enhanced animation variants
@@ -123,12 +129,11 @@ const Skills = () => {
           <motion.p className="skills-description">
             Here are some technologies I've been working with recently
           </motion.p>
-        </motion.div>
-
-        <div className="skills-categories">
+        </motion.div>        <div className="skills-categories">
           {[
             { title: "Languages", data: languages },
             { title: "Frameworks & Libraries", data: frameworks },
+            { title: "Machine Learning Libraries", data: ml_libraries },
             { title: "Databases", data: databases },
             { title: "Tools & Technologies", data: tools }
           ].map((category, index) => (
