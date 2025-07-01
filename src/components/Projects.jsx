@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import './Projects.css';
 
@@ -15,8 +14,7 @@ const Projects = () => {
       setActiveCategory(category);
     }
   };
-    const webProjects = [
-    {
+    const webProjects = [    {
       id: 1,
       title: "Thriftify",
       description: "A modern, scalable e-commerce platform for buying and selling secondhand goods.",
@@ -33,26 +31,8 @@ const Projects = () => {
         "🛡️ Role-based access control for admin and user privileges"
       ],
       tags: ["EJS", "Node.js", "Express", "MongoDB", "Cloudinary"]
-    },
-    {
+    },     {
       id: 2,
-      title: "VideoTube-Backend",
-      description: "Scalable video platform backend built with modern best practices",
-      githubLink: "https://github.com/viraj-gavade/VideoTube-Backend",
-      demoLink: 'https://videotubeapi-uukxbf8d.b4a.run./home',
-      features: [
-        "🔐 Secure user authentication with JWT and password hashing",
-        "🎥 Video upload and storage integration with Cloudinary",
-        "👥 Social features: comments, likes, and channel subscriptions",
-        "🛡️ Role-based access control for secure operations",
-        "📊 Optimized database queries and pagination",
-        "🚀 Efficient caching for improved performance",
-        "📝 Complete CRUD operations for video management"
-      ],
-      tags: ["Node.js", "Express", "MongoDB", "JWT", "Cloudinary"]
-    },
-    {
-      id: 3,
       title: "Blogify - Full Stack Blogging Platform",
       description: "A modern full-stack blogging platform built with React and Node.js, featuring Google OAuth authentication and a clean, responsive UI",
       githubLink: "https://github.com/viraj-gavade/Blogging-Website",
@@ -70,12 +50,48 @@ const Projects = () => {
         "👁️ Show/hide password toggle for better password security and UX"
       ],
       tags: ["Node.js", "React.js", "Express", "MongoDB", "JWT", "OAuth2"]
+    },
+    {
+      id: 3,
+      title: "StudyShare",
+      description: "A full-stack platform that allows students to upload, share, and discover academic resources with AWS S3 integration for file storage",
+      githubLink: "https://github.com/viraj-gavade/STUDY-SHARE",
+      demoLink: 'https://study-share-frontend.onrender.com',
+      features: [
+        "📚 Centralized platform for sharing educational resources among students",
+        "🔐 User authentication with JWT and secure password management",
+        "📤 File uploads with AWS S3 integration for secure document storage",
+        "🏷️ Resource tagging, categorization by department and semester",
+        "👍 Social features including upvotes and comments on study materials",
+        "🔍 Advanced search and filtering capabilities for resources",
+        "💅 Modern, responsive UI built with React, TypeScript and TailwindCSS",
+        "📱 Responsive design for seamless mobile and desktop experience",
+        "✨ Animated components using Framer Motion for enhanced UX"
+      ],
+      tags: ["React", "TypeScript", "Node.js", "Express", "MongoDB", "AWS S3", "TailwindCSS"]
     }
   ];
-  
-  const mlProjects = [
+    const mlProjects = [
     {
       id: 5,
+      title: "Network Security ML System",
+      description: "End-to-end machine learning pipeline for network security threat detection with MLOps integration",
+      githubLink: "https://github.com/viraj-gavade/Network-Security-Machine-Learning-Project",
+      demoLink: null,
+      features: [
+        "🛡️ Complete ML pipeline for detecting and classifying network security threats",
+        "🔄 Automated data pipeline with MongoDB integration for data storage",
+        "🧠 Model comparison framework evaluating Random Forest, Decision Tree, Gradient Boosting, Logistic Regression, and AdaBoost",
+        "📊 MLflow and DagsHub integration for experiment tracking and versioning",
+        "🐳 Containerized with Docker for consistent deployment",
+        "🚀 FastAPI web service for real-time predictions",
+        "☁️ AWS S3 integration for artifact and model storage",
+        "🔍 Data validation with drift detection between training and test data"
+      ],
+      tags: ["Python", "Scikit-Learn", "MongoDB", "FastAPI", "MLflow", "Docker", "AWS S3"]
+    },
+    {
+      id: 6,
       title: "Heart Disease Prediction System",
       description: "Machine learning model that predicts heart disease probability based on patient medical data",
       githubLink: "https://github.com/viraj-gavade/Heart-Disease-Prediction-using-Machine-Learning",
