@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 import './Projects.css';
 
 const Projects = () => {
