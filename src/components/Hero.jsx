@@ -58,7 +58,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            Full Stack Developer & API Architect
+            Full Stack Developer & AI/ML Learner
           </motion.h2>
           
           <motion.div 
