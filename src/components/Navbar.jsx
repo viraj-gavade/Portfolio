@@ -1,13 +1,23 @@
 import { useState, useEffect } from 'react';
-import { FiSun, FiMoon, FiMenu, FiX, FiArrowUp, FiSearch } from 'react-icons/fi';
+import { FiMenu, FiX, FiArrowUp } from 'react-icons/fi';
 import { Link } from 'react-scroll';
 import './Navbar.css';
 
-const Navbar = ({ darkMode, toggleDarkMode }) => {
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [activeSection, setActiveSection] = useState('hero');
+  
+  // Define navLinks before using it in useEffect
+  const navLinks = [
+    { name: "Home", to: "hero" },
+    { name: "About", to: "about" },
+    { name: "Skills", to: "skills" },
+    { name: "Projects", to: "projects" },
+    { name: "Certifications", to: "certifications" },
+    { name: "Contact", to: "footer" }
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,10 +39,10 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         setActiveSection(current);
       }
     };
-    
+      
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [navLinks]);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -44,18 +54,9 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
       behavior: 'smooth'
     });
   };
-
-  const navLinks = [
-    { name: "Home", to: "hero" },
-    { name: "About", to: "about" },
-    { name: "Skills", to: "skills" },
-    { name: "Projects", to: "projects" },
-    { name: "Contact", to: "footer" }
-  ];
-
   return (
     <>
-      <nav className={`navbar ${scrolled ? 'navbar-scrolled' : ''} ${darkMode ? 'navbar-dark' : 'navbar-light'}`}>
+      <nav className={`navbar ${scrolled ? 'navbar-scrolled' : ''} navbar-dark`}>
         <div className="navbar-container">
           <div className="navbar-content">
             <div className="navbar-logo">
@@ -79,28 +80,10 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                   {link.name}
                 </Link>
               ))}
-              
-              
-              
-              <button
-                onClick={toggleDarkMode}
-                className="theme-toggle-btn"
-                aria-label="Toggle dark mode"
-              >
-                {darkMode ? <FiSun className="sun-icon" /> : <FiMoon className="moon-icon" />}
-              </button>
-            </div>
+                </div>
             
             {/* Mobile menu button */}
             <div className="mobile-nav-buttons">
-              
-              <button
-                onClick={toggleDarkMode}
-                className="theme-toggle-btn mobile-theme-btn"
-                aria-label="Toggle dark mode"
-              >
-                {darkMode ? <FiSun className="sun-icon" /> : <FiMoon className="moon-icon" />}
-              </button>
               <button
                 onClick={toggleMenu}
                 className="menu-toggle-btn"

@@ -34,12 +34,6 @@
 body {
   font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
-  color: var(--text-light);
-  background-color: var(--background-light);
-  transition: color var(--transition-normal), background-color var(--transition-normal);
-}
-
-body.dark-theme {
   color: var(--text-dark);
   background-color: var(--background-dark);
 }
@@ -100,7 +94,7 @@ section {
   font-weight: 700;
   margin-bottom: 2.5rem;
   text-align: center;
-  color: var(--text-light);
+  color: var(--text-dark);
   position: relative;
   display: inline-block;
   left: 50%;
@@ -118,10 +112,6 @@ section {
   background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
 }
 
-body.dark-theme .section-title {
-  color: var(--text-dark);
-}
-
 @media (min-width: 768px) {
   .section-title {
     font-size: 2.25rem;
@@ -132,11 +122,6 @@ body.dark-theme .section-title {
 .dark-theme-bg {
   background-color: var(--background-dark);
   color: var(--text-dark);
-}
-
-.light-theme-bg {
-  background-color: var(--background-light);
-  color: var(--text-light);
 }
 
 /* Utility classes for spacing and layout */

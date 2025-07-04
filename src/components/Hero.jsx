@@ -81,8 +81,7 @@ const Hero = () => {
               </a>
             ))}
           </motion.div>
-          
-          <motion.div 
+            <motion.div 
             className="cta-container"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -90,6 +89,9 @@ const Hero = () => {
           >
             <a href="#projects" className="cta-button primary-button">
               View Projects
+            </a>
+            <a href="#certifications" className="cta-button secondary-button">
+              My Certifications
             </a>
             <a href="#about" className="cta-button secondary-button">
               About Me

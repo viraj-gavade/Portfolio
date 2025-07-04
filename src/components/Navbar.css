@@ -22,17 +22,7 @@
   height: var(--navbar-height);
 }
 
-/* Light mode navbar styles */
-.navbar-light {
-  background-color: var(--background-light);
-  color: var(--text-color-light);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-light.navbar-scrolled {
-  background-color: var(--background-light-scrolled);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
+/* Navbar styles are dark mode only */
 
 /* Dark mode navbar styles */
 .navbar-dark {
@@ -138,8 +128,7 @@
   background-color: var(--primary-color);
 }
 
-/* Theme Toggle Button - Simplified */
-.theme-toggle-btn,
+/* Search Button */
 .search-button {
   display: flex;
   align-items: center;
@@ -155,18 +144,8 @@
   position: relative;
 }
 
-.theme-toggle-btn:hover,
 .search-button:hover {
-  background-color: rgba(0, 0, 0, 0.05);
-}
-
-.navbar-dark .theme-toggle-btn:hover,
-.navbar-dark .search-button:hover {
   background-color: rgba(255, 255, 255, 0.1);
-}
-
-.sun-icon {
-  color: #facc15;
 }
 
 .search-icon {
@@ -185,7 +164,6 @@
   }
 }
 
-.mobile-theme-btn,
 .mobile-search-btn {
   margin-left: 0;
   margin-right: 0.75rem;
@@ -206,10 +184,6 @@
 }
 
 .menu-toggle-btn:hover {
-  background-color: rgba(0, 0, 0, 0.05);
-}
-
-.navbar-dark .menu-toggle-btn:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -241,10 +215,6 @@
 
 .mobile-menu-content {
   padding: 0.5rem;
-  background-color: var(--background-light);
-}
-
-.navbar-dark .mobile-menu-content {
   background-color: var(--background-dark);
 }
 
@@ -261,10 +231,6 @@
 
 .mobile-nav-link:hover {
   color: var(--primary-color);
-  background-color: rgba(0, 0, 0, 0.05);
-}
-
-.navbar-dark .mobile-nav-link:hover {
   background-color: rgba(255, 255, 255, 0.05);
 }
 
