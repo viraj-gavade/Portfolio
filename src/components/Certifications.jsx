@@ -93,19 +93,7 @@ const Certifications = () => {
               variants={item}
               className="certification-card"
             >
-              {cert.image && (
-                <div className="certification-image-container">
-                  <img 
-                    src={cert.image} 
-                    alt={`${cert.title} Certificate`} 
-                    className="certification-image"
-                    onError={(e) => {
-                      e.target.onerror = null;
-                      e.target.src = "/certificates/default-cert.jpg"; // Fallback image
-                    }}
-                  />
-                </div>
-              )}
+            
               <div className="certification-content">
                 <h3 className="certification-title">{cert.title}</h3>
                 <div className="certification-meta">
