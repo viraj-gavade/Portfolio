@@ -1,111 +1,73 @@
-# Viraj Gavade - Portfolio Website
+# Welcome to your Lovable project
 
-A modern, responsive portfolio website built with React and CSS to showcase my projects, skills, and experience.
+## Project info
 
-![Portfolio Screenshot](./src/assets/portfolio-screenshot.png)
+**URL**: https://lovable.dev/projects/1715240b-ee48-4ba3-9001-0668739e5089
 
-## 🚀 Features
+## How can I edit this code?
 
-- **Responsive Design**: Fully responsive layout that works on all device sizes
-- **Dark/Light Mode**: Toggle between dark and light themes based on preference
-- **Smooth Animations**: Enhanced user experience with Framer Motion animations
-- **Project Showcase**: Highlighting key projects with detailed information
-- **Skills Display**: Visual representation of technical skills by category
-- **Contact Section**: Easy ways to get in touch via email or social platforms
-- **Accessibility**: Designed with accessibility in mind, including proper semantic HTML
-- **Performance Optimized**: Lazy loading images and optimized assets
+There are several ways of editing your application.
 
-## 🛠️ Technologies Used
+**Use Lovable**
 
-- **React.js** - Frontend library for building user interfaces
-- **CSS** - Custom CSS for styling without external libraries
-- **Framer Motion** - Animation library for React
-- **React Icons** - Icon components for popular icon packs
-- **React Scroll** - Smooth scrolling between sections
-- **React Lazy Load Image** - Lazy loading for optimal performance
-- **Vite** - Fast and efficient build tool
+Simply visit the [Lovable Project](https://lovable.dev/projects/1715240b-ee48-4ba3-9001-0668739e5089) and start prompting.
 
-## 🏁 Getting Started
+Changes made via Lovable will be committed automatically to this repo.
 
-### Prerequisites
+**Use your preferred IDE**
 
-- Node.js (v14 or higher)
-- npm or yarn
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-### Installation
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/viraj-gavade/portfolio.git
-   cd portfolio
-   ```
+Follow these steps:
 
-2. Install dependencies:
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
-3. Start the development server:
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
-4. Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
+# Step 3: Install the necessary dependencies.
+npm i
 
-## 📂 Project Structure
-/src
-  /assets        - Images and static resources
-  /components    - React components
-    /About      - About section component
-    /Footer     - Footer component
-    /Hero       - Hero section component
-    /Navbar     - Navigation bar component
-    /Projects   - Projects section component
-    /Skills     - Skills section component
-  App.jsx        - Main application component
-  App.css        - Global styles
-  index.css      - CSS reset and base styles
-  main.jsx       - Entry point
-
-## 🎨 Customization
-
-- **Colors**: Edit the CSS variables in `/src/App.css` to change the color scheme
-- **Content**: Update project data, skills, and personal information in each component
-- **Images**: Replace images in the `/src/assets` directory
-- **Font**: Change the font by updating the font-family in the CSS files
-
-## 🚢 Deployment
-
-This project is set up to be easily deployed on platforms like Vercel or Netlify.
-
-### Deploying to Vercel
-
-```bash
-npm install -g vercel
-vercel
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
 ```
 
-### Deploying to Netlify
+**Edit a file directly in GitHub**
 
-```bash
-npm install -g netlify-cli
-netlify deploy
-```
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-## 📄 License
+**Use GitHub Codespaces**
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## 📬 Contact
+## What technologies are used for this project?
 
-Viraj Gavade - [vrajgavade17@gmail.com](mailto:vrajgavade17@gmail.com)
+This project is built with:
 
-Project Link: [https://github.com/viraj-gavade/portfolio](https://github.com/viraj-gavade/portfolio)
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
----
+## How can I deploy this project?
 
-Made with ❤️ by Viraj Gavade
+Simply open [Lovable](https://lovable.dev/projects/1715240b-ee48-4ba3-9001-0668739e5089) and click on Share -> Publish.
+
+## Can I connect a custom domain to my Lovable project?
+
+Yes, you can!
+
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
