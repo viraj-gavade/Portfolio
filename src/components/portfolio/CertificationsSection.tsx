@@ -99,10 +99,19 @@ export const CertificationsSection = () => {
                     <div>
                        <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors story-link">
                          {cert.certificateUrl ? (
-                           <a href={cert.certificateUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:underline">
+                           <span className="flex items-center gap-2">
                              {cert.title}
-                             <ExternalLink className="w-4 h-4" />
-                           </a>
+                             <a
+                               href={cert.certificateUrl}
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               className="inline-flex items-center justify-center h-7 w-7 rounded-md hover:bg-accent transition-colors pointer-events-auto z-10 ml-1"
+                               aria-label={`Open certificate for ${cert.title}`}
+                               style={{ pointerEvents: 'auto', zIndex: 10 }}
+                             >
+                               <ExternalLink className="w-4 h-4" />
+                             </a>
+                           </span>
                          ) : (
                            cert.title
                          )}
