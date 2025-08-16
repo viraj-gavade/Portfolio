@@ -13,6 +13,7 @@ const navItems = [
 export const Navigation = () => {
   const [activeSection, setActiveSection] = useState("");
   const [isScrolled, setIsScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -71,12 +72,36 @@ export const Navigation = () => {
           </div>
 
           {/* Mobile menu button */}
-          <button className="md:hidden p-2">
+          <button
+            className="md:hidden p-2"
+            aria-label="Toggle menu"
+            onClick={() => setMobileMenuOpen((open) => !open)}
+          >
             <div className="w-6 h-0.5 bg-foreground mb-1"></div>
             <div className="w-6 h-0.5 bg-foreground mb-1"></div>
             <div className="w-6 h-0.5 bg-foreground"></div>
           </button>
         </div>
+        {/* Mobile nav menu */}
+        {mobileMenuOpen && (
+          <div className="md:hidden flex flex-col items-start space-y-4 mt-4 bg-background rounded-lg shadow-lg p-4">
+            {navItems.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className={cn(
+                  "text-base font-medium transition-colors hover:text-primary",
+                  activeSection === item.href.slice(1)
+                    ? "text-primary"
+                    : "text-muted-foreground"
+                )}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {item.name}
+              </a>
+            ))}
+          </div>
+        )}
       </div>
     </nav>
   );

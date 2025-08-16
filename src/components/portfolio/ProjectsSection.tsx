@@ -40,7 +40,7 @@ const projects = [
     description: "ML-powered web app predicting heart disease risk using Logistic Regression with interactive visualizations and mobile-responsive design.",
     tech: ["Python", "Scikit-learn", "FastAPI", "Chart.js", "Docker", "Render"],
     github: "https://github.com/viraj-gavade/Heart-disease-Prediction-using-Machine-Learning",
-    live: "#",
+    live: "heart-disease-2gln.onrender.com/",
     color: "from-secondary to-primary"
   },
   {
@@ -48,7 +48,7 @@ const projects = [
     description: "RAG-based chatbot using LangChain and HuggingFace embeddings that allows users to upload PDFs and chat with their content.",
     tech: ["Python", "LangChain", "Streamlit", "ChromaDB", "HuggingFace", "RAG"],
     github: "https://github.com/viraj-gavade/End-to-end-Conversational-chatbot-with-pdf-and-chat-history",
-    live: "#",
+    live: "https://rag-document-app.streamlit.app/",
     color: "from-accent to-secondary"
   }
 ];
@@ -70,7 +70,7 @@ export const ProjectsSection = () => {
           {projects.map((project, index) => (
             <Card 
               key={index} 
-              className="p-6 bg-card/50 border-border hover:bg-card/80 transition-all duration-300 group gradient-border animate-fade-in hover-scale"
+              className="p-6 bg-card/50 border-border hover:bg-card/80 transition-all duration-300 group gradient-border animate-fade-in select-none pointer-events-none"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="space-y-4">
@@ -78,18 +78,26 @@ export const ProjectsSection = () => {
                   <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
                     {project.title}
                   </h3>
-                  <div className="flex space-x-2">
-                    <Button size="sm" variant="ghost" asChild>
-                      <a href={project.github} target="_blank" rel="noopener noreferrer">
-                        <Github className="w-4 h-4" />
-                      </a>
-                    </Button>
+                  <div className="flex space-x-2 pointer-events-auto z-10">
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center h-9 w-9 rounded-md hover:bg-accent transition-colors pointer-events-auto z-10"
+                      aria-label={`Open ${project.title} GitHub`}
+                    >
+                      <Github className="w-4 h-4" />
+                    </a>
                     {project.live !== "#" && (
-                      <Button size="sm" variant="ghost" asChild>
-                        <a href={project.live} target="_blank" rel="noopener noreferrer">
-                          <ExternalLink className="w-4 h-4" />
-                        </a>
-                      </Button>
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center h-9 w-9 rounded-md hover:bg-accent transition-colors pointer-events-auto z-10"
+                        aria-label={`Open ${project.title} Live`}
+                      >
+                        <ExternalLink className="w-4 h-4" />
+                      </a>
                     )}
                   </div>
                 </div>
