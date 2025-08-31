@@ -4,6 +4,15 @@ import { Calendar, Award, ExternalLink } from "lucide-react";
 
 const certifications = [
    {
+    title: "Oracle Cloud Infrastructure 2025 Certified Generative AI Professional",
+    issuer: "Oracle",
+    date: "August 2025",
+    description: "Certification for expertise in Oracle Cloud Infrastructure and Generative AI, validating advanced skills in cloud-based AI solutions and generative models.",
+    skills: ["Oracle Cloud", "Generative AI", "Cloud Infrastructure", "AI", "Machine Learning"],
+    color: "from-primary to-accent",
+    certificateUrl: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=C1581D76C9B19EA7DD25C7E0D0A57626B4084DE7F3D3D1876D86990E100AEC3D"
+  },
+   {
     title: "Complete Data Science, Machine Learning, Deep Learning, NLP Bootcamp",
     issuer: "Udemy - Krish Naik",
     date: "August 2025",
@@ -32,6 +41,16 @@ const certifications = [
     color: "from-accent to-primary",
     certificateUrl: "https://coursera.org/share/16418c4b4fee42012a01c5e69c7badc5"
   },
+   {
+    title: "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
+    issuer: "Oracle",
+    date: "August 2025",
+    description: "Certification for foundational knowledge in Oracle Cloud Infrastructure and AI, validating essential skills in cloud-based AI concepts and solutions.",
+    skills: ["Oracle Cloud", "AI Foundations", "Cloud Infrastructure", "Artificial Intelligence"],
+    color: "from-accent to-primary",
+    certificateUrl: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=A9319E065260D1AD88B8C2FF33925A707E7B4639148705740C474E4DF6AA75A8"
+  },
+
   {
     title: "Python for Data Science, AI & Development",
     issuer: "IBM",
