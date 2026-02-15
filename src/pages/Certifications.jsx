@@ -35,8 +35,8 @@ const Certifications = () => {
           <motion.div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))',
-              gap: '2rem'
+              gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
+              gap: 'clamp(1rem, 2vw, 2rem)'
             }}
             variants={staggerContainerVariants}
             initial="hidden"
@@ -174,13 +174,13 @@ const Certifications = () => {
         <div
           style={{
             background: 'var(--bg-secondary)',
-            padding: '3rem',
+            padding: 'clamp(1.5rem, 4vw, 3rem)',
             border: '1px solid var(--border-subtle)'
           }}
         >
           <h2
             style={{
-              fontSize: '1.5rem',
+              fontSize: 'clamp(1.25rem, 4vw, 1.5rem)',
               fontWeight: 600,
               marginBottom: '2rem',
               color: 'var(--text-primary)',
@@ -193,8 +193,8 @@ const Certifications = () => {
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
-              gap: '2rem'
+              gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+              gap: 'clamp(1rem, 2vw, 2rem)'
             }}
           >
             {Object.entries(groupedCerts).map(([category, certs]) => (

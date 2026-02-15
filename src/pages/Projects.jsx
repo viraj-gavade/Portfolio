@@ -6,70 +6,26 @@ import { staggerContainerVariants, staggerItemVariants } from '../hooks/useScrol
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
-  const [filter, setFilter] = useState('All');
   const [hoveredCard, setHoveredCard] = useState(null);
-
-  const categories = ['All', ...new Set(projects.map(p => p.category))];
-
-  const filteredProjects = filter === 'All'
-    ? projects
-    : projects.filter(p => p.category === filter);
 
   return (
     <div className="portfolio-container" style={{ paddingTop: '80px' }}>
       <section className="section">
         <h1 className="section-title">Projects</h1>
 
-        {/* Filter buttons */}
-        <div style={{ display: 'flex', gap: '1rem', marginBottom: '3rem', flexWrap: 'wrap' }}>
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setFilter(cat)}
-              style={{
-                padding: '0.5rem 1.5rem',
-                background: filter === cat ? 'var(--text-primary)' : 'transparent',
-                color: filter === cat ? 'var(--bg-primary)' : 'var(--text-secondary)',
-                border: `1px solid ${filter === cat ? 'var(--text-primary)' : 'var(--border-medium)'}`,
-                borderRadius: 'var(--radius-md)',
-                fontSize: '0.875rem',
-                fontWeight: 600,
-                textTransform: 'uppercase',
-                letterSpacing: '0.05em',
-                cursor: 'pointer',
-                transition: 'all 0.2s ease'
-              }}
-              onMouseEnter={(e) => {
-                if (filter !== cat) {
-                  e.target.style.borderColor = 'var(--border-strong)';
-                  e.target.style.color = 'var(--text-primary)';
-                }
-              }}
-              onMouseLeave={(e) => {
-                if (filter !== cat) {
-                  e.target.style.borderColor = 'var(--border-medium)';
-                  e.target.style.color = 'var(--text-secondary)';
-                }
-              }}
-            >
-              {cat}
-            </button>
-          ))}
-        </div>
-
         {/* Project cards */}
         <motion.div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))',
-            gap: '2rem'
+            gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
+            gap: 'clamp(1rem, 2vw, 2rem)'
           }}
           variants={staggerContainerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
         >
-          {filteredProjects.map((project) => (
+          {projects.map((project) => (
             <motion.div
               key={project.id}
               className="card"
@@ -173,8 +129,8 @@ const Projects = () => {
                 </div>
 
                 {/* Links */}
-                <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', justifyContent: 'space-between' }}>
-                  <div style={{ display: 'flex', gap: '1rem' }}>
+                <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap' }}>
+                  <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                     <a
                       href={project.github}
                       target="_blank"
