@@ -12,7 +12,7 @@ export const personalInfo = {
   email: "vrajgavade17@gmail.com",
   resumes: {
     ml: "https://drive.google.com/file/d/1eX96BByuqhmx08pwYMOp0pKNfYPjgz6L/view?usp=sharing",
-    fullstack: "https://drive.google.com/file/d/1eX96BByuqhmx08pwYMOp0pKNfYPjgz6L/view?usp=drive_link"
+    fullstack: "https://drive.google.com/file/d/10-OV5tIPfflHdch4liOrayKvxWJf7CS-/view?usp=sharing"
   }
 };
 
