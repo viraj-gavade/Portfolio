@@ -11,8 +11,10 @@ export const personalInfo = {
   twitter: "https://x.com/viraj_gavade",
   email: "vrajgavade17@gmail.com",
   resumes: {
-    ml: "https://drive.google.com/file/d/1eX96BByuqhmx08pwYMOp0pKNfYPjgz6L/view?usp=sharing",
-    fullstack: "https://drive.google.com/file/d/10-OV5tIPfflHdch4liOrayKvxWJf7CS-/view?usp=sharing"
+    ml: "https://drive.google.com/file/d/14ZciY67_Bl874VOAtNvVIfXM0deVXjrX/view?usp=sharing",
+    fullstack: "https://drive.google.com/file/d/1mSombCeDRLcZg-_0IAvvmlQq_dELe-6n/view?usp=sharing",
+    ai: "https://drive.google.com/file/d/1h0XPVvvoFqMnFxoinpQZG00nQbII-D0K/view?usp=sharing",
+    aiml: "https://drive.google.com/file/d/11bGrPk8WNSWPR3GU97VvXgssoZYhm2-K/view?usp=sharing"
   }
 };
 

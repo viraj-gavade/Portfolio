@@ -188,7 +188,27 @@ const Contact = () => {
               style={{ display: 'inline-flex' }}
             >
               <Download size={18} />
-              Fullstack Resume
+              Fullstack Engineer Resume
+            </a>
+            <a
+              href={personalInfo.resumes.ai}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary"
+              style={{ display: 'inline-flex' }}
+            >
+              <Download size={18} />
+              AI Engineer Resume
+            </a>
+            <a
+              href={personalInfo.resumes.aiml}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary"
+              style={{ display: 'inline-flex' }}
+            >
+              <Download size={18} />
+              AIML Engineer Resume
             </a>
           </div>
         </motion.div>
