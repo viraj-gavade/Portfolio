@@ -27,21 +27,7 @@ export const metrics = {
   linesOfCode: "50K+"
 };
 
-export const experience = [
-  {
-    id: 1,
-    role: "AIML Intern",
-    company: "Labmentix",
-    period: "Oct 2025 – Present",
-    description: [
-      "Engineered deployable computer vision models using MobileNetV2 and custom CNNs with real-time FastAPI and Streamlit inference",
-      "Architected end-to-end ML pipelines from preprocessing to inference using PyTorch and scikit-learn",
-      "Designed real-time API-based model serving infrastructure",
-      "Built recall-optimized fraud detection workflows using large UPI transaction datasets"
-    ],
-    tech: ["PyTorch", "FastAPI", "Streamlit", "MobileNetV2", "Scikit-learn"]
-  }
-];
+export const experience = [];
 
 export const timeline = [
   {
@@ -103,21 +89,6 @@ export const timeline = [
     skills: ["LangChain", "RAG", "LLMs", "Prompt Engineering"],
     projects: ["Conversational RAG Chatbot"],
     type: "certification"
-  },
-  {
-    id: 7,
-    period: "Oct 2025",
-    title: "AIML Internship at Labmentix",
-    description: "Started internship focusing on computer vision and ML model deployment",
-    icon: "💼",
-    skills: ["MobileNetV2", "FastAPI", "Computer Vision", "Model Serving"],
-    projects: ["Fraud Detection Pipeline"],
-    achievements: [
-      "Engineered deployable computer vision models with real-time inference",
-      "Architected end-to-end ML pipelines from preprocessing to deployment",
-      "Built recall-optimized fraud detection for payment systems"
-    ],
-    type: "internship"
   },
   {
     id: 8,
